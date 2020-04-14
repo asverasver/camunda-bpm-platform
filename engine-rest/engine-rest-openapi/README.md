@@ -17,6 +17,7 @@ Aligned with OpeanAPI specification version [3.0.2](https://github.com/OAI/OpenA
  + [reuse](#reuse)
  + [descriptions](#descriptions)
  + [formats](#formats)
+ + [nullable](#nullable)
  + [examples](#examples)
 3. [Reviews](#reviews)
 
@@ -213,6 +214,18 @@ Specify the `date-time` format of the date properties whenever is possible,
                        the date must have the format `yyyy-MM-dd'T'HH:mm:ss.SSSZ`, e.g., 2013-01-23T14:42:45.000+0200." />
 ```
 That will improve the clients that are generated from the OpenAPI documentation. **Note:** When using a 'date-time' in a 'GET' request (as URL parameter), it is important to use proper URL encoding as described in the [Date Format Overview](https://docs.camunda.org/manual/develop/reference/rest/overview/date-format/)
+
+#### Nullable
+
+Enable `nullable` field to the properties of type Integer and Long (Wrapper Classes) to ensure working C# clients:
+```
+    <@lib.property
+        name = "priority"
+        type = "integer"
+        format = "int32"
+        nullable = true
+        desc = "Restrict to tasks that have the given priority." />
+```
 
 #### Examples
 
