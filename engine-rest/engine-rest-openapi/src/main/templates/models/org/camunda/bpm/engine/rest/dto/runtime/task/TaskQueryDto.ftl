@@ -299,18 +299,21 @@
         name = "priority"
         type = "integer"
         format = "int32"
+        nullable = true
         desc = "Restrict to tasks that have the given priority." />
   
     <@lib.property
         name = "maxPriority"
         type = "integer"
         format = "int32"
+        nullable = true
         desc = "Restrict to tasks that have a lower or equal priority." />
   
     <@lib.property
         name = "minPriority"
         type = "integer"
         format = "int32"
+        nullable = true
         desc = "Restrict to tasks that have a higher or equal priority." />
   
     <@lib.property

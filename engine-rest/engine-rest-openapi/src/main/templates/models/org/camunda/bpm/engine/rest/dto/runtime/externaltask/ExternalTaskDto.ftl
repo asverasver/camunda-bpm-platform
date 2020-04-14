@@ -69,6 +69,7 @@
       name = "retries"
       type = "integer"
       format = "int32"
+      nullable = true
       desc = "The number of retries the task currently has left." />
 
   <@lib.property

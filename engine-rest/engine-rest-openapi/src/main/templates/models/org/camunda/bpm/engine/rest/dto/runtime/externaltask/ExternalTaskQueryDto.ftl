@@ -116,6 +116,7 @@
       name = "priorityHigherThanOrEquals"
       type = "integer"
       format = "int64"
+      nullable = true
       desc = "Only include jobs with a priority higher than or equal to the given value.
               Value must be a valid `long` value." />
 
@@ -123,6 +124,7 @@
       name = "priorityLowerThanOrEquals"
       type = "integer"
       format = "int64"
+      nullable = true
       desc = "Only include jobs with a priority lower than or equal to the given value.
               Value must be a valid `long` value." />
 

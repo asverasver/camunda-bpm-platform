@@ -10,6 +10,7 @@
         name = "retries"
         type = "integer"
         format = "int32"
+        nullable = true
         minimum = 0
         desc = "An integer representing the number of retries. Please note that the value cannot be negative or null." />
 

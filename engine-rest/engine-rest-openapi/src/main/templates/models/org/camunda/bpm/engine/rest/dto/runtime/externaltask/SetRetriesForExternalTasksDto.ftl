@@ -4,6 +4,7 @@
       name = "retries"
       type = "integer"
       format = "int32"
+      nullable = true
       desc = "The number of retries to set for the external task.  Must be >= 0. If this is 0, an incident is created
               and the task cannot be fetched anymore unless the retries are increased again. Can not be null." />
 
